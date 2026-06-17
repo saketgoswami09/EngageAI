@@ -64,8 +64,8 @@ export default function Login() {
             <button 
               type="button"
               onClick={() => {
-                setEmail('admin@example.com');
-                setPassword('admin123');
+                setEmail('admin@test.com');
+                setPassword('Admin@1234');
                 toast.success('All fields loaded!');
               }}
               className="text-[11px] font-semibold text-indigo-600 hover:text-indigo-700 transition-colors cursor-pointer"
