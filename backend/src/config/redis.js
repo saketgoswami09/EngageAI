@@ -6,6 +6,7 @@ const redisClient = new Redis(env.REDIS_URL, {
   maxRetriesPerRequest: 3,
   enableOfflineQueue: false,
   lazyConnect: true,
+  family: 4, // Force IPv4 for Upstash compatibility
   retryStrategy(times) {
     if (times > 5) {
       logger.error('Redis: max retries reached');
