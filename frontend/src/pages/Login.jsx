@@ -78,11 +78,11 @@ export default function Login() {
             {/* Email Quick-Fill Action Button */}
             <button
               type="button"
-              onClick={() => handleQuickAccess('email', 'admin@example.com')}
+              onClick={() => handleQuickAccess('email', 'admin@test.com')}
               className="flex items-center justify-between w-full px-3 py-2 text-left bg-white border border-gray-100 hover:border-gray-200 rounded-lg group transition-all text-xs text-gray-600 focus:outline-none"
             >
               <span className="truncate pr-2">
-                <span className="text-gray-400 font-medium mr-1">Email:</span> admin@example.com
+                <span className="text-gray-400 font-medium mr-1">Email:</span> admin@test.com
               </span>
               <Clipboard size={12} className="text-gray-300 group-hover:text-gray-500 transition-colors shrink-0" />
             </button>
@@ -90,11 +90,11 @@ export default function Login() {
             {/* Password Quick-Fill Action Button */}
             <button
               type="button"
-              onClick={() => handleQuickAccess('password', 'admin123')}
+              onClick={() => handleQuickAccess('password', 'Admin@1234')}
               className="flex items-center justify-between w-full px-3 py-2 text-left bg-white border border-gray-100 hover:border-gray-200 rounded-lg group transition-all text-xs text-gray-600 focus:outline-none"
             >
               <span>
-                <span className="text-gray-400 font-medium mr-1">Pass:</span> admin123
+                <span className="text-gray-400 font-medium mr-1">Pass:</span> Admin@1234
               </span>
               <Clipboard size={12} className="text-gray-300 group-hover:text-gray-500 transition-colors shrink-0" />
             </button>
